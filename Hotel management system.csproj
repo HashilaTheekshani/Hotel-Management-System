@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{600C4C45-75E7-41B2-84C7-FADF8286A99F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_management_system</RootNamespace>
+    <AssemblyName>Hotel management system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_MainPage.Designer.cs">
+      <DependentUpon>Admin_MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.cs">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HotelDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagePackageForm.Designer.cs">
+      <DependentUpon>ManagePackageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageReservationForm.Designer.cs">
+      <DependentUpon>ManageReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStaffForm.Designer.cs">
+      <DependentUpon>ManageStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMainMenu.Designer.cs">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPackage.Designer.cs">
+      <DependentUpon>ViewPackage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MainPage.resx">
+      <DependentUpon>Admin_MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePackageForm.resx">
+      <DependentUpon>ManagePackageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReservationForm.resx">
+      <DependentUpon>ManageReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStaffForm.resx">
+      <DependentUpon>ManageStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMainMenu.resx">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPackage.resx">
+      <DependentUpon>ViewPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HotelDBDataSet.xsc">
+      <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDBDataSet.xss">
+      <DependentUpon>HotelDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDBDataSet1.xsc">
+      <DependentUpon>HotelDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HotelDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelDBDataSet1.xss">
+      <DependentUpon>HotelDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
